@@ -1368,6 +1368,10 @@ unsigned long dictScan(dict *d,
             }
 
             /* Increment bits not covered by the smaller mask */
+            //下面的意思是，还需要扩展小点的表，将其后缀固定，然后看高位可以怎么扩充。
+            //其实就是想扫描一下小表里面的元素可能会扩充到哪些地方，需要将那些地方处理一遍。
+            //后面的(v & m0)是保留v在小表里面的后缀。
+            //((v | m0) + 1) & ~m0) 是想给v的扩展部分的二进制位不断的加1，来造成高位不断增加的效果。
             v = (((v | m0) + 1) & ~m0) | (v & m0);
 
             /* Continue while bits covered by mask difference is non-zero */
