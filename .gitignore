@@ -86,7 +86,7 @@ Module.symvers
 Mkfile.old
 dkms.conf
 build
-book
+RedisStudy/book
 .idea
 
 
