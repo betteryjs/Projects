@@ -1,0 +1,4 @@
+/home/yjs/Projects/RedisStudy/redis-3.0-annotated/study/cmake-build-debug/CMakeFiles/test.dir
+/home/yjs/Projects/RedisStudy/redis-3.0-annotated/study/cmake-build-debug/CMakeFiles/scan.dir
+/home/yjs/Projects/RedisStudy/redis-3.0-annotated/study/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yjs/Projects/RedisStudy/redis-3.0-annotated/study/cmake-build-debug/CMakeFiles/rebuild_cache.dir
