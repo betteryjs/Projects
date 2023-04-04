@@ -400,7 +400,7 @@ int dictRehash(dict *d, int n) {
             // 计算新哈希表的哈希值，以及节点插入的索引位置
             h = dictHashKey(d, de->key) & d->ht[1].sizemask;
 
-            // 插入节点到新哈希表
+            // 插入节点到新哈希表 头插法
             de->next = d->ht[1].table[h];
             d->ht[1].table[h] = de;
 
