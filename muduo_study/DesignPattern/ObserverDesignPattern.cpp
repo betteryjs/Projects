@@ -14,12 +14,14 @@
 #include <list>
 #include <string>
 
+// 订阅者基类
 class IObserver {
 public:
     virtual ~IObserver(){};
     virtual void Update(const std::string &message_from_subject) = 0;
 };
 
+// 发布者基类
 class ISubject {
 public:
     virtual ~ISubject(){};
@@ -33,6 +35,8 @@ public:
  * changes.
  */
 
+
+// 发布者
 class Subject : public ISubject {
 public:
     virtual ~Subject() {
@@ -82,6 +86,8 @@ private:
     std::string message_;
 };
 
+
+// 订阅者
 class Observer : public IObserver {
 public:
     Observer(Subject &subject) : subject_(subject) {
