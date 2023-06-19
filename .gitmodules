@@ -1,0 +1,12 @@
+[submodule "workflow_study/workflow"]
+	path = workflow_study/workflow
+	url = https://github.com/sogou/workflow.git
+[submodule "workflow_study/workflow_annotation"]
+	path = workflow_study/workflow_annotation
+	url = https://github.com/chanchann/workflow_annotation.git
+[submodule "workflow_study/wfrest"]
+	path = workflow_study/wfrest
+	url = https://github.com/wfrest/wfrest.git
+[submodule "muduo_study/muduo"]
+	path = muduo_study/muduo
+	url = https://github.com/chenshuo/muduo.git
