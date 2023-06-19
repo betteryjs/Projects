@@ -10,3 +10,9 @@
 [submodule "muduo_study/muduo"]
 	path = muduo_study/muduo
 	url = https://github.com/chenshuo/muduo.git
+[submodule "muduo_study/recipes"]
+	path = muduo_study/recipes
+	url = https://github.com/chenshuo/recipes.git
+[submodule "muduo_study/Cpp-Design-Patterns"]
+	path = muduo_study/Cpp-Design-Patterns
+	url = https://github.com/liu-jianhao/Cpp-Design-Patterns.git
