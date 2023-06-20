@@ -194,6 +194,19 @@ FactoryMethod/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FactoryMethod.dir/build.make CMakeFiles/FactoryMethod.dir/build
 .PHONY : FactoryMethod/fast
 
+#=============================================================================
+# Target rules for targets named Composite
+
+# Build rule for target.
+Composite: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Composite
+.PHONY : Composite
+
+# fast build rule for target.
+Composite/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Composite.dir/build.make CMakeFiles/Composite.dir/build
+.PHONY : Composite/fast
+
 AbstractFactory.o: AbstractFactory.cpp.o
 .PHONY : AbstractFactory.o
 
@@ -290,6 +303,30 @@ Builder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Builder.dir/build.make CMakeFiles/Builder.dir/Builder.cpp.s
 .PHONY : Builder.cpp.s
 
+Composite.o: Composite.cpp.o
+.PHONY : Composite.o
+
+# target to build an object file
+Composite.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Composite.dir/build.make CMakeFiles/Composite.dir/Composite.cpp.o
+.PHONY : Composite.cpp.o
+
+Composite.i: Composite.cpp.i
+.PHONY : Composite.i
+
+# target to preprocess a source file
+Composite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Composite.dir/build.make CMakeFiles/Composite.dir/Composite.cpp.i
+.PHONY : Composite.cpp.i
+
+Composite.s: Composite.cpp.s
+.PHONY : Composite.s
+
+# target to generate assembly for a file
+Composite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Composite.dir/build.make CMakeFiles/Composite.dir/Composite.cpp.s
+.PHONY : Composite.cpp.s
+
 FactoryMethod.o: FactoryMethod.cpp.o
 .PHONY : FactoryMethod.o
 
@@ -350,6 +387,7 @@ help:
 	@echo "... Adapter"
 	@echo "... Bridge"
 	@echo "... Builder"
+	@echo "... Composite"
 	@echo "... FactoryMethod"
 	@echo "... ObserverDesignPattern"
 	@echo "... AbstractFactory.o"
@@ -364,6 +402,9 @@ help:
 	@echo "... Builder.o"
 	@echo "... Builder.i"
 	@echo "... Builder.s"
+	@echo "... Composite.o"
+	@echo "... Composite.i"
+	@echo "... Composite.s"
 	@echo "... FactoryMethod.o"
 	@echo "... FactoryMethod.i"
 	@echo "... FactoryMethod.s"
