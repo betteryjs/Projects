@@ -1,5 +1,6 @@
 /home/yjs/Projects/muduo_study/DesignPattern/cmake-build-debug/CMakeFiles/ObserverDesignPattern.dir
 /home/yjs/Projects/muduo_study/DesignPattern/cmake-build-debug/CMakeFiles/FactoryMethod.dir
 /home/yjs/Projects/muduo_study/DesignPattern/cmake-build-debug/CMakeFiles/Adapter.dir
+/home/yjs/Projects/muduo_study/DesignPattern/cmake-build-debug/CMakeFiles/Builder.dir
 /home/yjs/Projects/muduo_study/DesignPattern/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/yjs/Projects/muduo_study/DesignPattern/cmake-build-debug/CMakeFiles/rebuild_cache.dir

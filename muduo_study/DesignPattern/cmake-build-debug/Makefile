@@ -155,6 +155,19 @@ Adapter/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Adapter.dir/build.make CMakeFiles/Adapter.dir/build
 .PHONY : Adapter/fast
 
+#=============================================================================
+# Target rules for targets named Builder
+
+# Build rule for target.
+Builder: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Builder
+.PHONY : Builder
+
+# fast build rule for target.
+Builder/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Builder.dir/build.make CMakeFiles/Builder.dir/build
+.PHONY : Builder/fast
+
 Adapter.o: Adapter.cpp.o
 .PHONY : Adapter.o
 
@@ -178,6 +191,30 @@ Adapter.s: Adapter.cpp.s
 Adapter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Adapter.dir/build.make CMakeFiles/Adapter.dir/Adapter.cpp.s
 .PHONY : Adapter.cpp.s
+
+Builder.o: Builder.cpp.o
+.PHONY : Builder.o
+
+# target to build an object file
+Builder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Builder.dir/build.make CMakeFiles/Builder.dir/Builder.cpp.o
+.PHONY : Builder.cpp.o
+
+Builder.i: Builder.cpp.i
+.PHONY : Builder.i
+
+# target to preprocess a source file
+Builder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Builder.dir/build.make CMakeFiles/Builder.dir/Builder.cpp.i
+.PHONY : Builder.cpp.i
+
+Builder.s: Builder.cpp.s
+.PHONY : Builder.s
+
+# target to generate assembly for a file
+Builder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Builder.dir/build.make CMakeFiles/Builder.dir/Builder.cpp.s
+.PHONY : Builder.cpp.s
 
 FactoryMethod.o: FactoryMethod.cpp.o
 .PHONY : FactoryMethod.o
@@ -236,11 +273,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Adapter"
+	@echo "... Builder"
 	@echo "... FactoryMethod"
 	@echo "... ObserverDesignPattern"
 	@echo "... Adapter.o"
 	@echo "... Adapter.i"
 	@echo "... Adapter.s"
+	@echo "... Builder.o"
+	@echo "... Builder.i"
+	@echo "... Builder.s"
 	@echo "... FactoryMethod.o"
 	@echo "... FactoryMethod.i"
 	@echo "... FactoryMethod.s"

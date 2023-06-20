@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/yjs/Projects/muduo_study/DesignPattern/cmake-build-debu
 all: CMakeFiles/ObserverDesignPattern.dir/all
 all: CMakeFiles/FactoryMethod.dir/all
 all: CMakeFiles/Adapter.dir/all
+all: CMakeFiles/Builder.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ preinstall:
 clean: CMakeFiles/ObserverDesignPattern.dir/clean
 clean: CMakeFiles/FactoryMethod.dir/clean
 clean: CMakeFiles/Adapter.dir/clean
+clean: CMakeFiles/Builder.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -85,7 +87,7 @@ clean: CMakeFiles/Adapter.dir/clean
 CMakeFiles/ObserverDesignPattern.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ObserverDesignPattern.dir/build.make CMakeFiles/ObserverDesignPattern.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ObserverDesignPattern.dir/build.make CMakeFiles/ObserverDesignPattern.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yjs/Projects/muduo_study/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target ObserverDesignPattern"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yjs/Projects/muduo_study/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target ObserverDesignPattern"
 .PHONY : CMakeFiles/ObserverDesignPattern.dir/all
 
 # Build rule for subdir invocation for target.
@@ -111,7 +113,7 @@ CMakeFiles/ObserverDesignPattern.dir/clean:
 CMakeFiles/FactoryMethod.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FactoryMethod.dir/build.make CMakeFiles/FactoryMethod.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FactoryMethod.dir/build.make CMakeFiles/FactoryMethod.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yjs/Projects/muduo_study/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target FactoryMethod"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yjs/Projects/muduo_study/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target FactoryMethod"
 .PHONY : CMakeFiles/FactoryMethod.dir/all
 
 # Build rule for subdir invocation for target.
@@ -155,6 +157,32 @@ Adapter: CMakeFiles/Adapter.dir/rule
 CMakeFiles/Adapter.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Adapter.dir/build.make CMakeFiles/Adapter.dir/clean
 .PHONY : CMakeFiles/Adapter.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Builder.dir
+
+# All Build rule for target.
+CMakeFiles/Builder.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Builder.dir/build.make CMakeFiles/Builder.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Builder.dir/build.make CMakeFiles/Builder.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yjs/Projects/muduo_study/DesignPattern/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target Builder"
+.PHONY : CMakeFiles/Builder.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Builder.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yjs/Projects/muduo_study/DesignPattern/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Builder.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yjs/Projects/muduo_study/DesignPattern/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Builder.dir/rule
+
+# Convenience name for target.
+Builder: CMakeFiles/Builder.dir/rule
+.PHONY : Builder
+
+# clean rule for target.
+CMakeFiles/Builder.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Builder.dir/build.make CMakeFiles/Builder.dir/clean
+.PHONY : CMakeFiles/Builder.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
