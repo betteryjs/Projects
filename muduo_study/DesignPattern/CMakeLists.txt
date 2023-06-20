@@ -1,2 +1,3 @@
 add_executable(ObserverDesignPattern ObserverDesignPattern.cpp)
 add_executable(FactoryMethod FactoryMethod.cpp)
+add_executable(Adapter Adapter.cpp)
