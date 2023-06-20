@@ -130,17 +130,17 @@ ObserverDesignPattern/fast:
 .PHONY : ObserverDesignPattern/fast
 
 #=============================================================================
-# Target rules for targets named FactoryMethod
+# Target rules for targets named AbstractFactory
 
 # Build rule for target.
-FactoryMethod: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FactoryMethod
-.PHONY : FactoryMethod
+AbstractFactory: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AbstractFactory
+.PHONY : AbstractFactory
 
 # fast build rule for target.
-FactoryMethod/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FactoryMethod.dir/build.make CMakeFiles/FactoryMethod.dir/build
-.PHONY : FactoryMethod/fast
+AbstractFactory/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AbstractFactory.dir/build.make CMakeFiles/AbstractFactory.dir/build
+.PHONY : AbstractFactory/fast
 
 #=============================================================================
 # Target rules for targets named Adapter
@@ -180,6 +180,43 @@ Bridge: cmake_check_build_system
 Bridge/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bridge.dir/build.make CMakeFiles/Bridge.dir/build
 .PHONY : Bridge/fast
+
+#=============================================================================
+# Target rules for targets named FactoryMethod
+
+# Build rule for target.
+FactoryMethod: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FactoryMethod
+.PHONY : FactoryMethod
+
+# fast build rule for target.
+FactoryMethod/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FactoryMethod.dir/build.make CMakeFiles/FactoryMethod.dir/build
+.PHONY : FactoryMethod/fast
+
+AbstractFactory.o: AbstractFactory.cpp.o
+.PHONY : AbstractFactory.o
+
+# target to build an object file
+AbstractFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AbstractFactory.dir/build.make CMakeFiles/AbstractFactory.dir/AbstractFactory.cpp.o
+.PHONY : AbstractFactory.cpp.o
+
+AbstractFactory.i: AbstractFactory.cpp.i
+.PHONY : AbstractFactory.i
+
+# target to preprocess a source file
+AbstractFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AbstractFactory.dir/build.make CMakeFiles/AbstractFactory.dir/AbstractFactory.cpp.i
+.PHONY : AbstractFactory.cpp.i
+
+AbstractFactory.s: AbstractFactory.cpp.s
+.PHONY : AbstractFactory.s
+
+# target to generate assembly for a file
+AbstractFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AbstractFactory.dir/build.make CMakeFiles/AbstractFactory.dir/AbstractFactory.cpp.s
+.PHONY : AbstractFactory.cpp.s
 
 Adapter.o: Adapter.cpp.o
 .PHONY : Adapter.o
@@ -309,11 +346,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... AbstractFactory"
 	@echo "... Adapter"
 	@echo "... Bridge"
 	@echo "... Builder"
 	@echo "... FactoryMethod"
 	@echo "... ObserverDesignPattern"
+	@echo "... AbstractFactory.o"
+	@echo "... AbstractFactory.i"
+	@echo "... AbstractFactory.s"
 	@echo "... Adapter.o"
 	@echo "... Adapter.i"
 	@echo "... Adapter.s"

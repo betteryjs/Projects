@@ -9,6 +9,7 @@
  * Publisher and the Observer is often called the Subscriber and vice versa.
  * Also the verbs "observe", "listen" or "track" usually mean the same thing.
  */
+ // 观察者 Observer
 
 #include <iostream>
 #include <list>

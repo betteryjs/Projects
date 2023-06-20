@@ -1,5 +1,6 @@
 add_executable(ObserverDesignPattern ObserverDesignPattern.cpp)
-add_executable(FactoryMethod FactoryMethod.cpp)
+add_executable(AbstractFactory AbstractFactory.cpp)
 add_executable(Adapter Adapter.cpp)
 add_executable(Builder Builder.cpp)
 add_executable(Bridge Bridge.cpp)
+add_executable(FactoryMethod FactoryMethod.cpp)

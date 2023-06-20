@@ -1,7 +1,7 @@
 /**
  * The Target defines the domain-specific interface used by the client code.
  */
-
+// 适配器
 // Adapter 本质是对数据进行预处理然后输出到函数中
 #include <iostream>
 #include <algorithm>
