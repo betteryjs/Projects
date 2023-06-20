@@ -7,6 +7,11 @@
  * always follow the same interface.
  */
 
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 class Product1{
 public:
     std::vector<std::string> parts_;

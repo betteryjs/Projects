@@ -90,6 +90,6 @@ RedisStudy/book
 .idea
 web/books
 books
-
+cmake-build-debug/
 
 
