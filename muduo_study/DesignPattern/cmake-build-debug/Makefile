@@ -168,6 +168,19 @@ Builder/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Builder.dir/build.make CMakeFiles/Builder.dir/build
 .PHONY : Builder/fast
 
+#=============================================================================
+# Target rules for targets named Bridge
+
+# Build rule for target.
+Bridge: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Bridge
+.PHONY : Bridge
+
+# fast build rule for target.
+Bridge/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bridge.dir/build.make CMakeFiles/Bridge.dir/build
+.PHONY : Bridge/fast
+
 Adapter.o: Adapter.cpp.o
 .PHONY : Adapter.o
 
@@ -191,6 +204,30 @@ Adapter.s: Adapter.cpp.s
 Adapter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Adapter.dir/build.make CMakeFiles/Adapter.dir/Adapter.cpp.s
 .PHONY : Adapter.cpp.s
+
+Bridge.o: Bridge.cpp.o
+.PHONY : Bridge.o
+
+# target to build an object file
+Bridge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bridge.dir/build.make CMakeFiles/Bridge.dir/Bridge.cpp.o
+.PHONY : Bridge.cpp.o
+
+Bridge.i: Bridge.cpp.i
+.PHONY : Bridge.i
+
+# target to preprocess a source file
+Bridge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bridge.dir/build.make CMakeFiles/Bridge.dir/Bridge.cpp.i
+.PHONY : Bridge.cpp.i
+
+Bridge.s: Bridge.cpp.s
+.PHONY : Bridge.s
+
+# target to generate assembly for a file
+Bridge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Bridge.dir/build.make CMakeFiles/Bridge.dir/Bridge.cpp.s
+.PHONY : Bridge.cpp.s
 
 Builder.o: Builder.cpp.o
 .PHONY : Builder.o
@@ -273,12 +310,16 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Adapter"
+	@echo "... Bridge"
 	@echo "... Builder"
 	@echo "... FactoryMethod"
 	@echo "... ObserverDesignPattern"
 	@echo "... Adapter.o"
 	@echo "... Adapter.i"
 	@echo "... Adapter.s"
+	@echo "... Bridge.o"
+	@echo "... Bridge.i"
+	@echo "... Bridge.s"
 	@echo "... Builder.o"
 	@echo "... Builder.i"
 	@echo "... Builder.s"

@@ -35,7 +35,7 @@ public:
  */
 class Builder{
 public:
-    virtual ~Builder(){}
+    virtual ~Builder()= default;
     virtual void ProducePartA() const =0;
     virtual void ProducePartB() const =0;
     virtual void ProducePartC() const =0;

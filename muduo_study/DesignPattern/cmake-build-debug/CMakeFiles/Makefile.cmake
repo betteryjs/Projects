@@ -50,4 +50,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/FactoryMethod.dir/DependInfo.cmake"
   "CMakeFiles/Adapter.dir/DependInfo.cmake"
   "CMakeFiles/Builder.dir/DependInfo.cmake"
+  "CMakeFiles/Bridge.dir/DependInfo.cmake"
   )
