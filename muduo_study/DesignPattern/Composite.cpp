@@ -7,6 +7,8 @@
 #include <list>
 #include <string>
 
+using namespace std;
+
 /**
  * The base Component class declares common operations for both simple and
  * complex objects of a composition.
@@ -23,7 +25,7 @@ protected:
      * provide some default implementation for these methods.
      */
 public:
-    virtual ~Component() {}
+    virtual ~Component() = default;
     void SetParent(Component *parent) {
         this->parent_ = parent;
     }
@@ -43,8 +45,9 @@ public:
      * You can provide a method that lets the client code figure out whether a
      * component can bear children.
      */
+     // 是否到订单而不是盒子
     virtual bool IsComposite() const {
-        return false;
+        return false;  
     }
     /**
      * The base Component may implement some default behavior or leave it to
@@ -62,7 +65,7 @@ public:
  */
 class Leaf : public Component {
 public:
-    std::string Operation() const override {
+    string Operation() const override {
         return "Leaf";
     }
 };
