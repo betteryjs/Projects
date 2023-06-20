@@ -4,10 +4,15 @@
  * Each distinct product of a product family should have a base interface. All
  * variants of the product must implement this interface.
  */
+ // 生产产品A的工厂A
+#include <iostream>
+
+using namespace std;
+
 class AbstractProductA {
 public:
     virtual ~AbstractProductA(){};
-    virtual std::string UsefulFunctionA() const = 0;
+    virtual std::string UsefulFunctionA() const = 0;  // 产品A生成函数
 };
 
 /**
@@ -31,6 +36,7 @@ class ConcreteProductA2 : public AbstractProductA {
  * with each other, but proper interaction is possible only between products of
  * the same concrete variant.
  */
+// 生产产品B的工厂B
 class AbstractProductB {
     /**
      * Product B is able to do its own thing...
@@ -44,6 +50,7 @@ public:
      * The Abstract Factory makes sure that all products it creates are of the
      * same variant and thus, compatible.
      */
+     // 也可以调用AbstractProductA 的函数
     virtual std::string AnotherUsefulFunctionB(const AbstractProductA &collaborator) const = 0;
 };
 
@@ -90,6 +97,7 @@ public:
  * variants, but the products of one variant are incompatible with products of
  * another.
  */
+ // 工厂 A 和工厂 B 的父类
 class AbstractFactory {
 public:
     virtual AbstractProductA *CreateProductA() const = 0;
