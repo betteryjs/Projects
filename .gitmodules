@@ -16,3 +16,6 @@
 [submodule "muduo_study/Cpp-Design-Patterns"]
 	path = muduo_study/Cpp-Design-Patterns
 	url = https://github.com/liu-jianhao/Cpp-Design-Patterns.git
+[submodule "follyStudy/folly"]
+	path = follyStudy/folly
+	url = https://github.com/facebook/folly.git
