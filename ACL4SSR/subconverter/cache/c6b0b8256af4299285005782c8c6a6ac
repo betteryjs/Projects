@@ -1,0 +1,13 @@
+proxies:
+  - {"skip-cert-verify":true,"sni":"aliyun-hk.660114.xyz","type":"trojan","password":"Yjs1903$","server":"aliyun-hk.660114.xyz","port":10241,"name":"🇭🇰 HK[400M][Trojan]AliCloud"}
+  - {"skip-cert-verify":true,"sni":"gz.11451400.xyz","type":"trojan","password":"Yjs1903$","server":"gz.11451400.xyz","port":10242,"name":"🇭🇰 HK[400M][Trojan]AliCloud-GZBGP"}
+  - {"name":"🇭🇰 HK[500M][SS]Dmit-IEPL","type":"ss","server":"120.232.170.156","port":50122,"cipher":"aes-128-gcm","password":"Yjs1903$"}
+  - {"name":"🇭🇰 HK[500M][SS]KCD-IEPL","type":"ss","server":"iplc.660114.xyz","port":50122,"cipher":"aes-128-gcm","password":"Yjs1903$"}
+  - {"name":"🇯🇵 JP[100M][SS]NTT-IEPL","type":"ss","server":"120.232.170.156","port":50118,"cipher":"aes-128-gcm","password":"Yjs1903$"}
+  - {"name":"🇭🇰 HK[10M][SS]Dmit-UDPN","type":"ss","server":"42.240.130.10","port":10240,"cipher":"aes-128-gcm","password":"Yjs1903$"}
+  - {"name":"🇸🇬 SG[10M][SS]Bytevirt-UDPN","type":"ss","server":"42.240.130.10","port":10242,"cipher":"aes-128-gcm","password":"Yjs1903$"}
+  - {"name":"🇭🇰 HK[10M][SS]KCD-UDPN","type":"ss","server":"42.240.130.10","port":10241,"cipher":"aes-128-gcm","password":"Yjs1903$"}
+  - {"name":"🇯🇵 JP[10M][SS]NTT-UDPN","type":"ss","server":"113.31.113.13","port":10240,"cipher":"aes-128-gcm","password":"Yjs1903$"}
+  - {"name":"🇺🇸 US[9M][SS]Cera-UDPN","type":"ss","server":"113.31.113.13","port":10241,"cipher":"aes-128-gcm","password":"Yjs1903$"}
+  - {"name":"🇸🇬 SG[500M][SS]Bytevirt-IEPL","type":"ss","server":"120.232.170.156","port":50129,"cipher":"aes-128-gcm","password":"Yjs1903$"}
+  - {"name":"🇺🇸 US[150M][SS]Cera-IEPL","type":"ss","server":"120.232.170.156","port":50151,"cipher":"aes-128-gcm","password":"Yjs1903$"}

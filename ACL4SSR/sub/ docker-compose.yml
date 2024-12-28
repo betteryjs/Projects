@@ -1,0 +1,8 @@
+version: '3'
+services:
+    checkip:
+        image: cdn-reg.naloong.de/surge
+        container_name: surge
+        restart: unless-stopped
+        ports:
+            - '9007:5000'
