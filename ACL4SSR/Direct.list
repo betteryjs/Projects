@@ -1,8 +1,15 @@
 # 我的直连域名
 
+DOMAIN-KEYWORD,micu
+DOMAIN-KEYWORD,dogecloud
 DOMAIN-SUFFIX,micu.hk
 DOMAIN-SUFFIX,tv.micu.hk
 DOMAIN-SUFFIX,tv1.micu.hk
 DOMAIN-SUFFIX,tv0.micu.hk
+DOMAIN-SUFFIX,console.dogecloud.com
+DOMAIN-SUFFIX,dogecloud.com
+
+
+
 
 

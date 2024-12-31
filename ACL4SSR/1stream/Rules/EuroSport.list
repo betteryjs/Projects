@@ -1,0 +1,18 @@
+#	EuroSport
+#	update time 2024-12-31 12:42:15.942296
+
+
+DOMAIN-SUFFIX,europe-fastly-mediashield-live-prod.cdn.h264.io
+DOMAIN-SUFFIX,akamai.prod-live.h264.io
+DOMAIN-SUFFIX,eurosport-dlvr-ott.akamaized.net
+DOMAIN-SUFFIX,eu3-prod-images.disco-api.com
+DOMAIN-SUFFIX,eu3-prod.disco-api.com
+DOMAIN-SUFFIX,eurosportplayer.com
+DOMAIN-SUFFIX,eurosport.com
+DOMAIN-SUFFIX,eurosport.fr
+DOMAIN-SUFFIX,eurosport.es
+DOMAIN-SUFFIX,eurosport.ro
+DOMAIN-SUFFIX,eurosport.io
+DOMAIN-SUFFIX,eurosport.ru
+DOMAIN-SUFFIX,media-shield.live.eurosport.map.fastly.net
+DOMAIN-SUFFIX,eurosport-dlvr-ott-vod.akamaized.net

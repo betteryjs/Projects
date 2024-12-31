@@ -1,7 +1,34 @@
+
+
+
+# 内容：Github
+# 数量：6条
+DOMAIN-KEYWORD,github
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubusercontent.com
+
+
+
+
 # 我的代理域名
 
 DOMAIN-SUFFIX,cloud.ggvision.net
-DOMAIN-SUFFIX,status.660114.xyz
 DOMAIN-SUFFIX,mm.duraincloud.com
 DOMAIN-SUFFIX,paoluz.com
 DOMAIN-SUFFIX,hub.docker.com
+DOMAIN-SUFFIX,prokvm.shingstack.com
+DOMAIN-SUFFIX,shingstack.com
+DOMAIN-SUFFIX,ping0.cc
+DOMAIN-SUFFIX,v.ps
+DOMAIN-SUFFIX,vps.hosting
+
+
+# my cdn
+DOMAIN-SUFFIX,cdn-alist.naloong.de
+
+
+
+

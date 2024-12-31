@@ -12,9 +12,9 @@ sudo docker build -t 'sub' .
 
 
 # push to docker hub
-sudo docker login
-sudo docker tag sub betteryjs/sub
-sudo docker push betteryjs/sub
+#sudo docker login
+#sudo docker tag sub betteryjs/sub
+#sudo docker push betteryjs/sub
 
 ## sava to local .tar
 #sudo docker save sub > sub.tar
@@ -22,7 +22,7 @@ sudo docker push betteryjs/sub
 
 
 # push to cdn-reg.naloong.de
-sudo docker logout
+#sudo docker logout
 sudo docker login cdn-reg.naloong.de
 sudo docker tag sub cdn-reg.naloong.de/library/sub
 sudo docker push  cdn-reg.naloong.de/library/sub

@@ -15,9 +15,11 @@ app = Flask(__name__)
 @app.route('/Surge')
 def getSurrge():
     baseurl="https://substore.naloong.de/betteryjs/download/clash-meta?target=Clash"
-    configurl="https://oss.11451400.xyz/ACL4SSR/YJS.ini"
+    configurl="https://raw.githubusercontent.com/betteryjs/ACL4SSR/refs/heads/master/YJS.ini"
+
     parse={
         "target":"surge",
+        "ver" : "5",
         "url":baseurl,
         "config":configurl,
         "insert" : "false",
@@ -56,7 +58,7 @@ ca-p12 = MIIKPAIBAzCCCgYGCSqGSIb3DQEHAaCCCfcEggnzMIIJ7zCCBF8GCSqGSIb3DQEHBqCCBFA
 def singbox():
 
     baseurl="https://substore.naloong.de/betteryjs/download/clash-meta?target=Clash"
-    confurl="https://raw.githubusercontent.com/betteryjs/singbox/master/remote/ACL.json"
+    confurl="https://raw.githubusercontent.com/betteryjs/ACL4SSR/refs/heads/master/sb-config-1.11-yjs.json"
     url=f"https://sing-box-subscribe-doraemon.vercel.app/config/url={baseurl}&file={confurl}"
     resp=requests.get(url=url)
     with open("config.json",'wb') as file:
@@ -64,7 +66,63 @@ def singbox():
     return send_file("config.json", mimetype='text/plain')
 
 
+@app.route("/clash")
+def clash():
+    "https://pub-api-1.bianyuan.xyz/sub?target=clash&url=https%3A%2F%2Fsubstore.660114.xyz%2Fbetteryjs%2Fdownload%2Fclash-meta%3Ftarget%3DClash&insert=false&config=https%3A%2F%2Foss.11451400.xyz%2FACL4SSR%2FYJS.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true"
+    baseurl = "https://substore.naloong.de/betteryjs/download/clash-meta?target=Clash"
+    configurl = "https://raw.githubusercontent.com/betteryjs/ACL4SSR/refs/heads/master/YJS.ini"
 
+    parse = {
+        "target": "clash",
+        "url": baseurl,
+        "config": configurl,
+        "insert": "false",
+        "emoji": "true",
+        "list": "false",
+        "tfo": "false",
+        "scv": "false",
+        "fdn": "false",
+        "sort": "false"
+    }
+    # url="https://pub-api-1.bianyuan.xyz/sub?target=surge&ver=5&url=https%3A%2F%2Fsubstore.naloong.de%2Fbetteryjs%2Fdownload%2Fclash-meta%3Ftarget%3DClash&insert=false&config=https%3A%2F%2Foss.11451400.xyz%2FACL4SSR%2FYJS.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false"
+    url = "https://pub-api-1.bianyuan.xyz/sub?"
+
+    res = requests.get(url=url, params=parse).text
+    ans = res.replace('false', 'true')
+
+    with open("clash-meta.yaml", 'w') as file:
+        file.write(ans)
+    return send_file("clash-meta.yaml", mimetype='text/plain')
+
+
+
+@app.route("/quanx")
+def quanx():
+    "https://pub-api-1.bianyuan.xyz/sub?target=clash&url=https%3A%2F%2Fsubstore.660114.xyz%2Fbetteryjs%2Fdownload%2Fclash-meta%3Ftarget%3DClash&insert=false&config=https%3A%2F%2Foss.11451400.xyz%2FACL4SSR%2FYJS.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true"
+    baseurl = "https://substore.naloong.de/betteryjs/download/clash-meta?target=Clash"
+    configurl = "https://raw.githubusercontent.com/betteryjs/ACL4SSR/refs/heads/master/YJS.ini"
+
+    parse = {
+        "target": "quanx",
+        "url": baseurl,
+        "config": configurl,
+        "insert": "false",
+        "emoji": "true",
+        "list": "false",
+        "tfo": "false",
+        "scv": "false",
+        "fdn": "false",
+        "sort": "false"
+    }
+    # url="https://pub-api-1.bianyuan.xyz/sub?target=surge&ver=5&url=https%3A%2F%2Fsubstore.naloong.de%2Fbetteryjs%2Fdownload%2Fclash-meta%3Ftarget%3DClash&insert=false&config=https%3A%2F%2Foss.11451400.xyz%2FACL4SSR%2FYJS.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false"
+    url = "https://pub-api-1.bianyuan.xyz/sub?"
+
+    res = requests.get(url=url, params=parse).text
+    ans = res.replace('false', 'true')
+
+    with open("quanx.yaml", 'w') as file:
+        file.write(ans)
+    return send_file("quanx.yaml", mimetype='text/plain')
 
 
 
