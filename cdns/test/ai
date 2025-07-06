@@ -1,0 +1,6 @@
+写一个 bash 文件要求 通过curl 更改 CloudFlare 域名的A 记录
+把
+DOMAIN="naloong.de
+"下面的 [ "cdn-alist","cdn-blog","cdn-book","cdn-docker-de"...]
+更改成ip 1.1.1.1
+如果某个子域名不存在 创建他并修改成1.1.1.1
